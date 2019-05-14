@@ -59,8 +59,6 @@ typedef NS_ENUM(NSUInteger, MMPlayerViewScalingMode) {
 @property (nonatomic, weak) id<MMPlayerViewDelegate> delegate;
 @property (nonatomic, assign) MMPlayerViewScalingMode scalingMode;
 
-@property (nonatomic, strong, readonly) UIImageView *coverView;
-
 @property (nonatomic, assign) BOOL autoPlay;
 
 @property (nonatomic, readonly) MMPlayer *player;
