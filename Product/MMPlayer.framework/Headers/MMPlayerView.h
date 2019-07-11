@@ -52,12 +52,17 @@ typedef NS_ENUM(NSUInteger, MMPlayerViewScalingMode) {
 // 视频分辨率
 - (void)playerView:(MMPlayerView *)player playerDidGetVideoResolution:(CGSize)videoResolution;
 
+// 视频播放状态
+- (void)playerView:(MMPlayerView *)player playerPlaybackStateDidChange:(MPMoviePlaybackState)state;
+
 @end
 
 @interface MMPlayerView : UIView
 
 @property (nonatomic, weak) id<MMPlayerViewDelegate> delegate;
 @property (nonatomic, assign) MMPlayerViewScalingMode scalingMode;
+
+@property (nonatomic, strong, readonly) UIImageView *coverView;
 
 @property (nonatomic, assign) BOOL autoPlay;
 

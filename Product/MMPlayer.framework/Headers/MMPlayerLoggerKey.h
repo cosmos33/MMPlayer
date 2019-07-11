@@ -54,6 +54,7 @@ extern NSString * const player_preload_audio_duration;
 extern NSString * const player_preload_video_duration;
 extern NSString * const player_video_toolbox_cost;
 extern NSString * const player_app_ver_num;
+extern NSString * const player_session_id;
 
 // unused keys
 extern NSString * const player_cdn_ip;

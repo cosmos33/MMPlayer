@@ -49,6 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 视频窗口尺寸改变
 - (void)player:(MMPlayer *)player playerDidVideoWindowSizeChanged:(CGSize)videoSize;
 
+// 视频播放状态改变通知
+- (void)player:(MMPlayer *)player playerPlaybackStateDidChange:(MPMoviePlaybackState)state;
+
 @end
 
 @interface MMPlayer : NSObject
