@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface MMPlayerProxyParams : NSObject <NSCopying>
+@interface MMPlayerProxyParams : NSObject <NSCopying, NSCoding>
 
 @property (nonatomic, assign) NSInteger preloadTimeMs;
 @property (nonatomic, assign) NSInteger preloadSize;
@@ -19,17 +19,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MMPlayerPlayParams : NSObject <NSCopying>
+@interface MMPlayerPlayParams : NSObject <NSCopying, NSCoding>
 
 @property (nonatomic, assign) BOOL videotoolbox;
 @property (nonatomic, assign) NSInteger max_buffer_size;
+@property (nonatomic, assign) BOOL isLog;
 
 @end
 
-@interface MMPlayerConfiguratinonModel : NSObject <NSCopying>
+@interface MMPlayerConfiguratinonModel : NSObject <NSCopying, NSCoding>
 
 @property (nonatomic, copy) MMPlayerProxyParams *proxy;
 @property (nonatomic, copy) MMPlayerPlayParams *player;
+
+- (void)saveModel;
++ (MMPlayerConfiguratinonModel * _Nullable)loadModel;
 
 @end
 
