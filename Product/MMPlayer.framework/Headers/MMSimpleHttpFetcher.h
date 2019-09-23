@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id<MMCancellable>)loadResource:(MMRemoteResouce<ObjectType> *)resouce
                             queue:(dispatch_queue_t _Nullable)queue
-                       completion:(void(^)(id data, NSData *rawData, NSError *error))completion;
+                       completion:(void(^)(ObjectType _Nullable data, NSData * _Nullable rawData, NSError * _Nullable error))completion;
 
 @end
 

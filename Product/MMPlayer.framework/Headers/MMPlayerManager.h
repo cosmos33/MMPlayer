@@ -30,11 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)configUserAgent:(NSString *)userAgent;
 + (NSString *)userAgent;
 
++ (void)setAppVersionCode:(NSInteger)versionCode;
++ (NSInteger)appVersionCode;
+
 + (void)configCachePath:(NSString *)cachePath;
 + (NSString *)cachePath;
 
-+ (void)configCacheSpaceLimit:(int)size;
-+ (int)cacheSpaceLimit;
++ (void)configCacheSpaceLimit:(long)size;
++ (long)cacheSpaceLimit;
 
 + (void)clearAllCache;
 

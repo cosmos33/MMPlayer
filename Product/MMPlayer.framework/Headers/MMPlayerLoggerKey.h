@@ -17,6 +17,7 @@ extern NSString * const player_error_code;
 extern NSString * const player_extra_code;
 extern NSString * const player_error_info;
 extern NSString * const player_is_first_video_rendered;
+extern NSString * const player_is_statistics;
 extern NSString * const player_perf_stat_type;
 extern NSString * const player_tcp_connect_cost_long;
 extern NSString * const player_find_stream_info_cost;

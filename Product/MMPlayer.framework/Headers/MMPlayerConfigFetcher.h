@@ -34,16 +34,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)saveModel;
 + (MMPlayerConfiguratinonModel * _Nullable)loadModel;
++ (void)clear;
 
 @end
 
 @interface MMPlayerConfigFetcher : NSObject
 
 - (void)fetchConfigWithCompletion:(void(^)(MMPlayerConfiguratinonModel *result, NSError *error))completion;
-
-@end
-
-@interface MMPlayerConfigDebugFetcher : MMPlayerConfigFetcher
 
 @end
 
