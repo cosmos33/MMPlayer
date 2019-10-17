@@ -57,6 +57,11 @@ extern NSString * const player_video_toolbox_cost;
 extern NSString * const player_app_ver_num;
 extern NSString * const player_session_id;
 
+extern NSString * const player_ipinfo_ip;
+extern NSString * const player_ipinfo_city;
+extern NSString * const player_ipinfo_province;
+extern NSString * const player_ipinfo_isp;
+
 // unused keys
 extern NSString * const player_cdn_ip;
 extern NSString * const player_video_media_codec_cost;

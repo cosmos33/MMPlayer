@@ -1,5 +1,5 @@
 //
-//  MDRecordPlatformUtils.h
+//  MMPlatformUtils.h
 //  pushsdk-ios
 //
 //  Created by wangduanqing on 2018/12/4.
@@ -31,6 +31,9 @@
 #define mmp_IPHONE_XS_NAMESTRING            @"iPhone XS"
 #define mmp_IPHONE_XSMAX_NAMESTRING         @"iPhone XS Max"
 #define mmp_IPHONE_XR_NAMESTRING            @"iPhone XR"
+#define mmp_IPHONE_11_NAMESTRING            @"iPhone 11"
+#define mmp_IPHONE_11PRO_NAMESTRING         @"iPhone 11 Pro"
+#define mmp_IPHONE_11PROMAX_NAMESTRING      @"iPhone 11 Pro Max"
 #define mmp_IPHONE_UNKNOWN_NAMESTRING       @"Unknown iPhone"
 
 #define mmp_IPOD_1G_NAMESTRING              @"iPod touch 1G"
@@ -98,6 +101,9 @@ typedef enum {
     mmp_UIDeviceXSiPhone,
     mmp_UIDeviceXSMaxiPhone,
     mmp_UIDeviceXRiPhone,
+    mmp_UIDevice11iPhone,
+    mmp_UIDevice11ProiPhone,
+    mmp_UIDevice11ProMaxiPhone,
     
     mmp_UIDevice1GiPod,
     mmp_UIDevice2GiPod,

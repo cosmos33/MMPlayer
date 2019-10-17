@@ -13,11 +13,11 @@
 
 #define __MMPlayerLogDebug__(fmt, ...)        __MDLogDebugTag(KMMPlayerTag, fmt, ##__VA_ARGS__)
 
-extern NSString * const KMMPlayerTag;
-
 @class MMPlayerConfiguratinonModel;
 
 NS_ASSUME_NONNULL_BEGIN
+
+extern NSString * const KMMPlayerTag;
 
 @interface MMPlayerManager : NSObject
 
