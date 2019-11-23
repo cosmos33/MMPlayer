@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MMPlayerFetcher.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -38,9 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface MMPlayerConfigFetcher : NSObject
+@interface MMPlayerConfigFetcher : MMPlayerFetcher
 
-- (void)fetchConfigWithCompletion:(void(^)(MMPlayerConfiguratinonModel *result, NSError *error))completion;
+- (void)fetchConfigWithCompletion:(void(^)(MMPlayerConfiguratinonModel * _Nullable result, NSError * _Nullable error))completion;
 
 @end
 
