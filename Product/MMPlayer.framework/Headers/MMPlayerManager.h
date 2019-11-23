@@ -13,11 +13,11 @@
 
 #define __MMPlayerLogDebug__(fmt, ...)        __MDLogDebugTag(KMMPlayerTag, fmt, ##__VA_ARGS__)
 
-extern NSString * const KMMPlayerTag;
-
 @class MMPlayerConfiguratinonModel;
 
 NS_ASSUME_NONNULL_BEGIN
+
+extern NSString * const KMMPlayerTag;
 
 @interface MMPlayerManager : NSObject
 
@@ -30,9 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)configUserAgent:(NSString *)userAgent;
 + (NSString *)userAgent;
 
-+ (void)setAppVersionCode:(NSInteger)versionCode;
-+ (NSInteger)appVersionCode;
-
 + (void)configCachePath:(NSString *)cachePath;
 + (NSString *)cachePath;
 
@@ -44,6 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)appId;
 
 + (NSString *)version;
++ (NSString *)buildVersion;
 
 + (MMPlayerConfiguratinonModel *)playerConfiguration;
 
