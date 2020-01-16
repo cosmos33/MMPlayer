@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MMIPlayerLogger.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MMMeidaLogger : NSObject <MMIPlayerLogger>
+@interface MMMeidaLogger : NSObject
 
 - (void)writeBody:(NSString *)body;
 - (void)forceUploadMMFile;

@@ -9,7 +9,6 @@
 
 @class MMPlayer;
 @class MMPlayerPreloader;
-@protocol MMIPlayerLogger;
 
 #define __MMPlayerLogDebug__(fmt, ...)        __MDLogDebugTag(KMMPlayerTag, fmt, ##__VA_ARGS__)
 
@@ -36,6 +35,9 @@ extern NSString * const KMMPlayerTag;
 + (void)configCacheSpaceLimit:(long)size;
 + (long)cacheSpaceLimit;
 
++ (void)setUserId:(NSString *)userId;
++ (NSString *)userId;
+
 + (void)clearAllCache;
 
 + (NSString *)appId;
@@ -52,8 +54,6 @@ extern NSString * const KMMPlayerTag;
 + (void)openDebugLog:(BOOL)console dir:(NSString * _Nullable)dir;
 
 + (void)openLogAnalyze:(BOOL)toggle;
-
-+ (id<MMIPlayerLogger>)playerLogger;
 
 @end
 

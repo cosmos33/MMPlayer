@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL videotoolbox;
 @property (nonatomic, assign) NSInteger max_buffer_size;
 @property (nonatomic, assign) BOOL isLog;
+@property (nonatomic, assign) BOOL preloadLog;
 
 @end
 
