@@ -71,6 +71,7 @@ typedef NS_ENUM(NSUInteger, MMPlayerViewScalingMode) {
 - (void)seekTo:(NSTimeInterval)time;
 
 - (void)prepareToPlay:(NSURL *)videoURL;
+- (void)prepareToPlay:(NSURL *)videoURL ofDomain:(NSString * _Nullable)domain;
 - (void)play;
 - (void)pause;
 - (void)stop;

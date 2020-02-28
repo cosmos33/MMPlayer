@@ -59,6 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<MMPlayerDelegate> delegate;
 
 - (void)prepareToPlay:(NSURL *)url;
+- (void)prepareToPlay:(NSURL *)url ofDomain:(NSString * _Nullable)domain;
 
 @property (nonatomic, readonly) BOOL isPreparedToPlay;
 
